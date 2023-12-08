@@ -1,3 +1,30 @@
+.header {
+    padding: 40px 40px 40px 40px;
+
+}
+
+.searchbar {
+    display: flex;
+    align-items: center;
+    padding: 40px 0px 40px 40px;
+    position: relative;
+}
+
+.helpmenu{
+    display: flex;
+    align-items: center;
+    padding: 40px 40px 40px 0px;
+    
+}
+
+.searchbutton{
+    display: flex;
+    align-items: center;
+}
+
+.image{
+    width: 203px;
+}
 .footer {
    position: fixed;
   left: 0;
