@@ -27,7 +27,7 @@
       <!--searchbar-->
       <div class="column searchbar is-5 is-offset-1">
         <div class="column">
-          <input class="input" type="text" placeholder="Artist Name">
+          <input class="input" id="artist-input" type="text" placeholder="Artist Name">
         </div>
       </div>
 
@@ -39,7 +39,7 @@
       
       <!--searchbutton-->
       <div class="column searchbutton is-1">
-          <button class="button">
+          <button class="button" onclick="spotifyArtistAndSongs()">
            Search
           </button>
       </div>
@@ -50,7 +50,7 @@
     <!--Results-->
     <article>
       <div class="columns ">
-        <div class="column is-offset-1">
+        <div class="column is-offset-1" id="results-spotify">
           Something
         </div>
 
