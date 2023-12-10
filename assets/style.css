@@ -35,3 +35,27 @@
   text-align: center;
   padding: 20px;
 }
+/* Social List Inside of Modal Box Styling */
+.modal-content {
+    display: inline-block;
+    text-align: center;
+}
+
+.social-list {
+    background-color: #515151;
+}
+
+
+.social-list a {
+    color: whitesmoke;
+    
+}
+
+.social-list a:hover {
+    color: rgb(68, 188, 140);
+    
+}
+
+#button_secret {
+    color: whitesmoke;
+}
