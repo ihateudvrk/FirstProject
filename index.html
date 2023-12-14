@@ -29,13 +29,30 @@
         <div class="column">
           <input class="input" id="artist-input" type="text" placeholder="Artist Name">
         </div>
+    
       </div>
-
+<!--help button-->
       <div class="column helpmenu is-narrow">
-        <button class="button is-small">
-          ?
-         </button>
-      </div>
+
+          <div class="dropdown is-hoverable">
+            <div class="dropdown-trigger">
+              <button class="button" aria-haspopup="true" aria-controls="dropdown-menu4">
+                <span>?</span>
+                <span class="icon is-small">
+                  <i class="fas fa-angle-down" aria-hidden="true"></i>
+                </span>
+              </button>
+            </div>
+            <div class="dropdown-menu" id="dropdown-menu4" role="menu">
+              <div class="dropdown-content">
+                <div class="dropdown-item">
+                  <p>Type in your favorite artist to see their top 10 songs on the playforms Spotify and Deezer!</p>
+                </div>
+              </div>
+            </div>
+          </div>
+       </div>
+  
       
       <!--searchbutton-->
       <div class="column searchbutton is-1">
@@ -52,19 +69,43 @@
 
 
       <div class="columns is-mobile is-1" id="columns-results_style">
-        <div class="column is-one-third" id="results-spotify">
 
-          Something
+    <!--Spotify Results-->
+        <div class="column box is-one-third">
+          <figure class="image is-128x128">
+            <img src="./assets/Spotify_Logo_RGB_Green.png">
+          </figure>
+          <ol id="results-spotify">
+            Spotify
+          </ol>
+         
+
+
         </div>
-
-        <div class="column is-one-third">
+<!--recently searched artists-->
+        <div class="column cake is-one-third">
+         <div class="box bread">
           Recent Searched Artists
+          <ol>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+          </ol>
+          
+         </div>
         </div>
 
+<!--Deezer Results-->
+        <div class="column box is-one-third">
+          <figure class="image is-128x128">
+            <img src="./assets/Deezer_Logo.jpg">
+          </figure>
+          <ol id="results-deezer">
+            Deezer
+          </ol>
 
-        <div class="column is-one-third"  id="results-deezer">
-
-          Something
         </div>
       </div>
 
