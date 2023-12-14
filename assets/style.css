@@ -1,7 +1,15 @@
 .header {
     padding: 40px 40px 40px 40px;
-
+    background-image: url(./background.png);
+    background-size: cover;
+    background-position: center;
+    height: 100%;
+    width: 100%;
+    margin-top: 0vh;
+    animation: scale 15s;
 }
+
+
 
 .searchbar {
     display: flex;
