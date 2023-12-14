@@ -63,3 +63,8 @@
 #columns-results_style {
     text-align: center;
 }
+/* Sets height for inner columns*/
+.column.cake{
+    height: 600px;
+}
+
