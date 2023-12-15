@@ -62,9 +62,9 @@ THEN the website can generate which playlist has more of my favorite songs in co
 <!-- PROJECT LOGO -->
 <br />
 <div align="center"> 
-<!-- Will insert deployed application here once its finished-->
-  <a href="https:///Users/kathylopez/Desktop/bootcamp/FirstProject/index.html">
-    <img src="./assets/logo.png" alt="Logo of our website" width="80" height="80">
+<!--(Done) Will insert deployed application here once its finished -->
+  <a href="https://ihateudvrk.github.io/FirstProject/">
+    <img src="./assets/images/logo.png" alt="Logo of our website" width="80" height="80">
   </a>
 
   <h3 align="center">Welcome-to-Music-Junky</h3>
@@ -72,8 +72,8 @@ THEN the website can generate which playlist has more of my favorite songs in co
   <p align="middle">
   A FREE website to search up your favorite artists!
     <br />
-    <!-- will change to our website once its deployed-->
-    <a href="https:///Users/kathylopez/Desktop/bootcamp/FirstProject/index.html"><strong>Explore the website »</strong></a>
+    <!--(Done) will change to our website once its deployed-->
+    <a href="https://ihateudvrk.github.io/FirstProject/"><strong>Explore the website »</strong></a>
     <br />
     <br />
     <!--I wrote this to help understand what are website is about and roleplay as if our website is live for users to report to our website-->

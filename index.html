@@ -8,8 +8,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>BBs Spotify vs Soundcloud</title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
-    <link rel="stylesheet" href="assets/style.css">
-    <link rel="stylesheet" href="assets/style.css">
+    <link rel="stylesheet" href="assets/cs/style.css">
  </head>
   
   
@@ -21,7 +20,7 @@
       <div class="column image is-narrow is-2">
 
         <figure class="image logo">
-           <img class="is-rounded" src="./assets/logo.png" alt ="picture of logo">
+           <img class="is-rounded" src="./assets/images/logo.png" alt ="picture of logo">
          </figure> 
 
       </div>
@@ -56,8 +55,8 @@
   
       
       <!--searchbutton-->
-      <div class="column searchbutton is-1" id="seBar">
-          <button class="button" onclick="getTopSongs();spotifyArtistAndSongs();">
+      <div class="column searchbutton is-1" id="seButt">
+          <button class="button" onclick="getTopSongs();spotifyArtistAndSongs();storeArt()">
            Search
           </button>
       </div>
@@ -74,7 +73,7 @@
     <!--Spotify Results-->
         <div class="column box is-one-third">
           <figure class="image is-128x128">
-            <img src="./assets/Spotify_Logo_RGB_Green.png">
+            <img src="./assets/images/Spotify_Logo_RGB_Green.png">
           </figure>
           <ol id="results-spotify">
             Spotify
@@ -87,14 +86,9 @@
         <div class="column cake is-one-third">
          <div class="box bread">
           Recent Searched Artists
-          <ol id="recentA">
-           <!-- <li></li>
-            <li></li>
-            <li></li>
-            <li></li>
-            <li></li>-->
-            Things
-          </ol>
+          <ul id="recentA">
+            nobody :)
+          </ul>
           
          </div>
         </div>
@@ -102,7 +96,7 @@
 <!--Deezer Results-->
         <div class="column box is-one-third">
           <figure class="image is-128x128">
-            <img src="./assets/Deezer_Logo.jpg">
+            <img src="./assets/images/Deezer_Logo.jpg">
           </figure>
           <ol id="results-deezer">
             Deezer
@@ -130,7 +124,7 @@
               </ul>      
              <!-- SHHH! -->
               <div>
-                <button class="button is-rounded is-danger"><a id="button_secret" href="https://www.youtube.com/watch?v=dQw4w9WgXcQ">Secret Button..Do NOT click</button>
+                <button class="button is-rounded is-danger"><a id="button_secret" href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" target="_blank">Free Money ( ̿ ̿ ̿ ̿ ̿ ̿ ̿ ̿°̿ ̿ ̿ ̿ ̿ ̿ ̿ ̿ ͜ʖ ̿ ̿ ̿ ̿ ̿ ̿ ̿°̿ ̿ ̿ ̿ ̿ ̿ ̿ )</button>
               </div>
             </div>
 
@@ -142,6 +136,7 @@
     </footer>
 </body>
 
-<script src="assets/script.js"></script>
+<script src="assets/js/script.js"></script>
+
 
 </html>
