@@ -153,7 +153,7 @@ async function getTopSongs(artistName) {
 }
 // looks for artist on deezer
 async function searchDeezerArtist(artistName) {
-    var url = `https://api.deezer.com/search?q=artist:"${artistName}"&api_key=${deezerApiKey}n`;
+    var url = `https://api.deezer.com/search?q=artist:"${artistName}"&api_key=${deezerApiKey}`;
     console.log('url', url);
     try {
       var response = await fetch(url);
