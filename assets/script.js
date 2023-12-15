@@ -177,7 +177,7 @@ async function searchDeezerArtist(artistName) {
     console.log('WOO!');
     try {
       var response = await fetch(
-        `https://api.deezer.com/artist/${artistId}/top?limit=10&api_key=${deezerApiKey}`
+        `https://cors-anywhere.herokuapp.com/https://api.deezer.com/artist/${artistId}/top?limit=10&api_key=${deezerApiKey}`
       );
       
       if (!response.ok) {
