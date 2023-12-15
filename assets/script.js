@@ -153,7 +153,7 @@ async function getTopSongs(artistName) {
 }
 // looks for artist on deezer
 async function searchDeezerArtist(artistName) {
-    var url = `https://cors-anywhere.herokuapp.com/https://api.deezer.com/search?q=artist:"${artistName}"&api_key=${deezerApiKey}`;
+    var url = `https://cw-cors-anywhere-e8eaf97b288f.herokuapp.com/https://api.deezer.com/search?q=artist:"${artistName}"&api_key=${deezerApiKey}`;
     console.log('url', url);
     try {
       var response = await fetch(url);
@@ -177,7 +177,7 @@ async function searchDeezerArtist(artistName) {
     console.log('WOO!');
     try {
       var response = await fetch(
-        `https://cors-anywhere.herokuapp.com/https://api.deezer.com/artist/${artistId}/top?limit=10&api_key=${deezerApiKey}`
+        `https://cw-cors-anywhere-e8eaf97b288f.herokuapp.com/https://api.deezer.com/artist/${artistId}/top?limit=10&api_key=${deezerApiKey}`
       );
       
       if (!response.ok) {
