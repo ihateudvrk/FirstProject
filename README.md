@@ -64,7 +64,7 @@ THEN the website can generate which playlist has more of my favorite songs in co
 <div align="center"> 
 <!-- Will insert deployed application here once its finished-->
   <a href="https:///Users/kathylopez/Desktop/bootcamp/FirstProject/index.html">
-    <img src="./assets/images/banana.png" alt="Logo of our website" width="80" height="80">
+    <img src="./assets/logo.png" alt="Logo of our website" width="80" height="80">
   </a>
 
   <h3 align="center">Welcome-to-Music-Junky</h3>
@@ -225,7 +225,7 @@ Team Bananabandana
 <!-- It can also be other form of social media if you would like -->
 
 * Kathy Lopez- kathyylopezz97@gmail.com
-* Darris Beach- type your email here
+* Darius Beach- dariusbeach4@gmail.com
 * Joseph Colon-type  your email here
 * Gabe Barraza- type your email here 
 

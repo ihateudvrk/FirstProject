@@ -121,7 +121,7 @@ function displayResults(artist, songs) {
 }
 
 // hold deezer api key
-var deezerApiKey = '653551';
+var deezerApiKey = '654731';
 
 // Function to get the top 10 songs of an artist
 async function getTopSongs(artistName) {
