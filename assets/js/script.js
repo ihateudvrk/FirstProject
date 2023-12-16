@@ -121,7 +121,7 @@ function displayResults(artist, songs) {
 }
 
 // hold deezer api key
-var deezerApiKey = '653551';
+var deezerApiKey = '654731';
 
 // Function to get the top 10 songs of an artist
 async function getTopSongs(artistName) {
@@ -153,7 +153,7 @@ async function getTopSongs(artistName) {
 }
 // looks for artist on deezer
 async function searchDeezerArtist(artistName) {
-    var url = `https://api.deezer.com/search?q=artist:"${artistName}"&api_key=${deezerApiKey}n`;
+    var url = `https://cw-cors-anywhere-e8eaf97b288f.herokuapp.com/https://api.deezer.com/search?q=artist:"${artistName}"&api_key=${deezerApiKey}`;
     console.log('url', url);
     try {
       var response = await fetch(url);
@@ -177,7 +177,7 @@ async function searchDeezerArtist(artistName) {
     console.log('WOO!');
     try {
       var response = await fetch(
-        `https://api.deezer.com/artist/${artistId}/top?limit=10&api_key=${deezerApiKey}`
+        `https://cw-cors-anywhere-e8eaf97b288f.herokuapp.com/https://api.deezer.com/artist/${artistId}/top?limit=10&api_key=${deezerApiKey}`
       );
       
       if (!response.ok) {
@@ -206,6 +206,7 @@ function displayDeezerResults(artistName, topTracks) {
 
   deezerResults.appendChild(deezerTL);
 }
+
 
 // Dropdowns in navbar
 
@@ -259,3 +260,61 @@ function getAll(selector) {
   return Array.prototype.slice.call(document.querySelectorAll(selector), 0);
 }
 ;
+
+
+/*Darius' struggle, this took 5 hours with the help of ai for help and understanding
+ignore this*/
+console.log("bunger hunger");
+
+
+
+//this alone took two hours because my dumbass kept putting the wrong id and i couldnt figure out what was wrong- Darius
+function storeArt() {
+    //calls id artist-input to artistInput in this function
+    const artistInput = document.getElementById("artist-input").value;
+//looks to see if input is empty
+    if (artistInput.trim() !== ''){
+   //adds artist in artist list while replacing the values in line 21 
+        addArt('artists', artistInput, 5);
+//shows current list on page updated
+        artistUpdate();
+
+}
+}
+
+//refers to setup on line 13 since artistInput is a const
+function addArt(key, value, limit){
+    //refers to parsing the artists key now in local storage
+    let addArts = JSON.parse(localStorage.getItem(key)) || [];
+//adds to current string list with whatever next artist is
+    addArts.push(value);
+//if list is curremtly at 5(refering to line 13) drop off last one and place new one at opposite end
+    addArts = addArts.slice(-limit);
+//sets new list back to artists key and stringifies so it can be stored
+    localStorage.setItem('artists', JSON.stringify(addArts));
+
+}
+// puts list of artists to the middle column
+function artistUpdate(){
+    //grabs the recent searched artists element
+    const artistUpdated = document.getElementById('recentA');
+//replaces anything excess inside, in this case the nobody :)
+    artistUpdated.innerHTML = '';
+//grabs artist key and makes into readable thing
+    artists =JSON.parse(localStorage.getItem('artists')) || [];
+//repeats this for each item currently in list
+    artists.forEach(thing =>{
+        //adds list item
+        const upArt = document.createElement('li');
+        //makes the list item into whatever artist is in whatever position its at
+        upArt.textContent = thing;
+        //puts list item into :) where it used to be
+        artistUpdated.appendChild(upArt);
+    
+    });
+}
+//readds list in local storage if reloaded or reentering website
+artistUpdate();
+
+
+
