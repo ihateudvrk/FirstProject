@@ -1,0 +1,35 @@
+/*created reset style to change fonts if needed for index.html*/
+*,
+*:before,
+*:after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  height: 100%;
+}
+
+body {
+  min-height: 100%;
+  line-height: 1;
+  font-family: Georgia, 'Times New Roman', Times, serif
+}
+
+h1,
+h2 {
+  font-size: 100%;
+}
+
+button {
+  font-size: 100%;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+
+ul {
+  list-style: none
+  ;
+}
+ 

@@ -30,9 +30,9 @@ You and your group will use everything you’ve learned over the past six module
 AS AN music fan, I would like to use an application, where I can compare the data between Spotify and Deezer. 
 So, I can identify which of my favorite music artists have more songs in their playlists.
 
-I WANT to use a search engine of my favorite artists and view the statistics between the two applications.
+I WANT to use a search engine of my top 10 artists and view the statistics between the two applications.
 
-SO THAT I can find which artists have my preferred playlist of my desired choice. 
+SO THAT I can find which artists have my preferred playlist of my desired choice in each platform. 
 
 ```
 

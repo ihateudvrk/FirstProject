@@ -1,3 +1,4 @@
+
 .header {
     padding: 40px 40px 40px 40px;
     background-image: url(../images/background.png);
@@ -9,9 +10,10 @@
     animation: scale 15s;
 }
 
-
+   
 
 .searchbar {
+
     display: flex;
     align-items: center;
     padding: 40px 0px 40px 40px;
@@ -33,6 +35,9 @@
 .image{
     width: 203px;
 }
+
+
+   
 .footer {
    position: fixed;
   left: 0;
@@ -75,4 +80,6 @@
 .column.cake{
     height: 600px;
 }
+
+
 

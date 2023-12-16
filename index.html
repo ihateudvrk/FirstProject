@@ -6,14 +6,99 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>BBs Spotify vs Soundcloud</title>
+    <title>BBs Spotify vs Deezer</title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
-    <link rel="stylesheet" href="assets/cs/style.css">
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel ="stylesheet" href="./assets/css/reset.css">
  </head>
-  
-  
 <body>
+  <!-- Bulma Desktop Navbar-->
+  <nav class="navbar is-transparent">
+    <div class="navbar-brand">
+      <a class="navbar-item" href="https://ihateudvrk.github.io/FirstProject/">
+        <img src="./assets/images/home.png" alt="image of music headphone for visual reference" width="60" height="60">
+      </a>
+      <div class="navbar-burger burger" data-target="navbartransparent">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+    </div>
   
+      <div id="navbar-transparent" class="navbar-menu">
+      <div class="navbar-start">
+        <a class="navbar-item" href="https://ihateudvrk.github.io/FirstProject">
+          Home
+        </a>
+        <div class="navbar-item has-dropdown is-hoverable">
+          <a class="navbar-link" href="#home">
+            Menu
+          </a>
+          <div class="navbar-dropdown is-boxed">
+            <a class="navbar-item" href="#artist-input">
+              Search
+            </a>
+            <a div class="navbar-dropdown is-boxed" >
+            <a class ="navbar-item" href="#columns-results_style">
+              Contact Information
+            </a>
+            <!-- divider for verison of our app -->
+            <hr class="navbar-divider">
+          <div class="navbar-item">
+            Version 0.9.4
+          </div>
+      </div>
+  <!-- tweet button-->
+    
+      <div class="navbar-end">
+        <div class="navbar-item">
+          <div class="field is-grouped">
+            <p class="control">
+              <a class="bd-tw-button button is-warning" data-social-network="Twitter" data-social-action="tweet" data-social-target="http://localhost:4000" target="_blank" href="https://twitter.com/intent/tweet?text=Bulma: a modern CSS framework based on Flexbox&amp;hashtags=bulmaio&amp;url=http://localhost:4000&amp;via=jgthms">
+                <span class="icon">
+                  <i class="fab fa-twitter"></i>
+                </span>
+                <span>
+                  Tweet
+                </span>
+              </a>
+            </p>
+            <!--download button-->
+            <p class="control">
+              <a class="button is-danger" href="/Users/kathylopez/Downloads/FirstProject.zip">
+                <span class="icon">
+                  <i class="fas fa-download"></i>
+                </span>
+                <span>Download</span>
+              </a>
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="navbar-menu">
+      <!-- hidden on mobile -->
+    </div>
+    
+    <div class="navbar-menu is-active">
+      <!-- shown on mobile -->
+    </div>
+    
+  </nav>
+
+<!-- End of bulma nav bar -->
+
+<section class="hero is-dark">
+  <div class="hero-body">
+    <p class="title">
+      Welcome to Music Junky 
+    </p>
+    <p class="subtitle">
+      Your #1 Website to <strong>search your top 10 favorite songlist</strong> 
+    </p>
+  </div>
+</section>
+
   <!--Top Head Items-->
     <header class="columns header">
       <!--image-->
@@ -26,14 +111,12 @@
       </div>
       <!--searchbar-->
       <div class="column searchbar is-5 is-offset-1">
-        <div class="column">
           <input class="input" id="artist-input" type="text" placeholder="Artist Name">
         </div>
     
       </div>
 <!--help button-->
       <div class="column helpmenu is-narrow">
-
           <div class="dropdown is-hoverable">
             <div class="dropdown-trigger">
               <button class="button" aria-haspopup="true" aria-controls="dropdown-menu4">
@@ -71,10 +154,11 @@
       <div class="columns is-mobile is-1" id="columns-results_style">
 
     <!--Spotify Results-->
-        <div class="column box is-one-third">
+        <div class="column box is-one-third, is-warning">
           <figure class="image is-128x128">
             <img src="./assets/images/Spotify_Logo_RGB_Green.png">
           </figure>
+          
           <ol id="results-spotify">
             Spotify
           </ol>
@@ -107,8 +191,10 @@
 
     </article>
   
+<div>
 
-      <footer class="footer">
+  <div>
+      <footer class="footer" id ="bottom-page" >
         <button class="contact button is-rounded is-dark" id="contact">Contact Information</button> 
 
         <!-- Modal for the Contact Info Button -->
@@ -136,7 +222,7 @@
     </footer>
 </body>
 
-<script src="assets/js/script.js"></script>
+<script src="./assets/js/script.js"></script>
 
 
 </html>
