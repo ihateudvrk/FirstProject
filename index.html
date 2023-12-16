@@ -9,74 +9,106 @@
     <title>BBs Spotify vs Deezer</title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
     <link rel="stylesheet" href="./assets/css/style.css">
-    <link rel="stylesheet" href="./assets/css/reset.css">
+    <link rel ="stylesheet" href="./assets/css/reset.css">
  </head>
-  <!--Desktop Navbar-->
-  <nav class="navbar" role="navigation" aria-label="main navigation">
+<body>
+  <!-- Bulma Desktop Navbar-->
+  <nav class="navbar is-transparent">
     <div class="navbar-brand">
       <a class="navbar-item" href="https://bulma.io">
-        <img src="https://bulma.io/images/bulma-logo.png" width="112" height="28">
+        <img src="./assets/images/home.png" alt="image of music headphone for visual reference" width="50" height="20">
       </a>
-  
-      <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false" data-target="navbarBasicExample">
-        <span aria-hidden="true"></span>
-        <span aria-hidden="true"></span>
-        <span aria-hidden="true"></span>
+      <a class="navbar-burger" data-target="navbartransparent">
+        <span></span>
+        <span></span>
+        <span></span>
       </a>
+      </div>
+      <!--moblie dropdown-->
+
+       <div classs ="navbar-menu" id="nav-links ">
+       <div class 
+
+
+
+
+
     </div>
   
-    <div id="navbarBasicExample" class="navbar-menu">
+    <div id="navbar-transparent" class="navbar-menu">
       <div class="navbar-start">
-        <a class="navbar-item">
+        <a class="navbar-item" href="https://ihateudvrk.github.io/FirstProject">
           Home
         </a>
-  
-  
         <div class="navbar-item has-dropdown is-hoverable">
-          <a class="navbar-link">
-            More
+          <a class="navbar-link" href="#home">
+            Menu
           </a>
-  
-          <div class="navbar-dropdown">
-            <a class="navbar-item">
-              Menu
+          <div class="navbar-dropdown is-boxed">
+            <a class="navbar-item" href="#artist-input">
+              Search
             </a>
-            <a class="navbar-item">
+            <a div class="navbar-dropdown is-boxed" >
+            <a class ="navbar-item" href="#columns-results_style">
               Contact Information
-
             </a>
-            <div class="navbar-item">
-            <a class="navbar-item">
-              Report an issue
-              <a class="navbar-dropdown" href="https://github.com/ihateudvrk/FirstProject/issues">
-
+            <!-- divider for verison of our app -->
+            <hr class="navbar-divider">
+          <div class="navbar-item">
+            Version 0.9.4
+          </div>
+  
+      <div class="navbar-end">
+        <div class="navbar-item">
+          <div class="field is-grouped">
+            <p class="control">
+              <a class="bd--button button" data-social-network="Twitter" data-social-action="tweet" data-social-target="http://localhost:4000" target="_blank" href="https://twitter.com/intent/tweet?text=Bulma: a modern CSS framework based on Flexbox&amp;hashtags=bulmaio&amp;url=http://localhost:4000&amp;via=jgthms">
+                <span class="icon">
+                  <i class="fab fa-twitter"></i>
+                </span>
+                <span>
+                  Tweet
+                </span>
+              </a>
+            </p>
+            <p class="control">
+              <a class="button is-black" href="(will add zip file here">
+                <span>
+                  
+                </span>
+                <span class="icon">
+                  <i class="fas fa-download"></i>
+                </span>
+                <span>Download</span>
+              </a>
+            </p>
+          </div>
         </div>
       </div>
+    </div>
+  
+    <div class="navbar-menu">
+      <!-- hidden on mobile -->
+    </div>
+    
+    <div class="navbar-menu is-active">
+      <!-- shown on mobile -->
+    </div>
+    
   </nav>
- <!--End of Navbar-->
-<!-- Mobile Navbar-->
-<figure id="mobile-nav">
-<section class="mobile-nav-bar">
-  <article class="links">
-    <ul>
-      <li>
-        <a href="#name" ><i class="fas fa-home">Home</i></a>
-      </li>
-      <li>
-        <a href="#projects" id="More">More<i class="fas fa-folder"></i></a>
-      </li>
-      <li>
-        <a href="#aboutme" id="menu">Menu><i class="fas fa-user"></i></a>
-      </li>
-      <li>
-        <a href="#contactme" id="contact">Contact Information<i class="fas fa-envelope-open-text"></i></a>
-      </li>
-    </ul>
-  </article>
-  </article>
-  </section>
-</figure>
-<!--End of Mobile Navbar-->
+
+<!-- End of bulma nav bar -->
+
+<section class="hero is-dark">
+  <div class="hero-body">
+    <p class="title">
+      Welcome to Music Junky 
+    </p>
+    <p class="subtitle">
+      Your #1 Website to <strong>search your 10 favorite playlist</strong> 
+    </p>
+  </div>
+</section>
 
   <!--Top Head Items-->
     <header class="columns header">
@@ -84,26 +116,18 @@
       <div class="column image is-narrow is-2">
 
         <figure class="image logo">
-           <img class="is-rounded" 
-    
-          src ="./assets/images/logo.png" alt ="picture of logo">
+           <img class="is-rounded" src="./assets/images/logo.png" alt ="picture of logo">
          </figure> 
 
       </div>
       <!--searchbar-->
       <div class="column searchbar is-5 is-offset-1">
-    
-        <div class="column">
-          <form>  
           <input class="input" id="artist-input" type="text" placeholder="Artist Name">
-          <button class="delete"></button>
-          </form>
         </div>
     
       </div>
 <!--help button-->
       <div class="column helpmenu is-narrow">
-
           <div class="dropdown is-hoverable">
             <div class="dropdown-trigger">
               <button class="button" aria-haspopup="true" aria-controls="dropdown-menu4">
@@ -125,8 +149,8 @@
   
       
       <!--searchbutton-->
-      <div class="column searchbutton is-1">
-          <button class="button" onclick="getTopSongs()">
+      <div class="column searchbutton is-1" id="seButt">
+          <button class="button" onclick="getTopSongs();spotifyArtistAndSongs();storeArt()">
            Search
           </button>
       </div>
@@ -141,7 +165,7 @@
       <div class="columns is-mobile is-1" id="columns-results_style">
 
     <!--Spotify Results-->
-        <div class="column box is-one-third">
+        <div class="column box is-one-third, is-warning">
           <figure class="image is-128x128">
             <img src="./assets/images/Spotify_Logo_RGB_Green.png">
           </figure>
@@ -156,13 +180,9 @@
         <div class="column cake is-one-third">
          <div class="box bread">
           Recent Searched Artists
-          <ol>
-            <li></li>
-            <li></li>
-            <li></li>
-            <li></li>
-            <li></li>
-          </ol>
+          <ul id="recentA">
+            nobody :)
+          </ul>
           
          </div>
         </div>
@@ -181,8 +201,10 @@
 
     </article>
   
+<div>
 
-      <footer class="footer">
+  <div>
+      <footer class="footer" id ="bottom-page" >
         <button class="contact button is-rounded is-dark" id="contact">Contact Information</button> 
 
         <!-- Modal for the Contact Info Button -->
@@ -198,7 +220,7 @@
               </ul>      
              <!-- SHHH! -->
               <div>
-                <button class="button is-rounded is-danger"><a id="button_secret" href="https://www.youtube.com/watch?v=dQw4w9WgXcQ">Secret Button..Do NOT click</button>
+                <button class="button is-rounded is-danger"><a id="button_secret" href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" target="_blank">Free Money ( ̿ ̿ ̿ ̿ ̿ ̿ ̿ ̿°̿ ̿ ̿ ̿ ̿ ̿ ̿ ̿ ͜ʖ ̿ ̿ ̿ ̿ ̿ ̿ ̿°̿ ̿ ̿ ̿ ̿ ̿ ̿ )</button>
               </div>
             </div>
 
@@ -211,5 +233,6 @@
 </body>
 
 <script src="./js/script.js"></script>
+
 
 </html>
