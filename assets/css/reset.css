@@ -1,0 +1,68 @@
+/*created reset style to change fonts if needed for index.html*/
+*,
+*:before,
+*:after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  height: 100%;
+}
+
+body {
+  min-height: 100%;
+  line-height: 1;
+  font-family: Georgia, 'Times New Roman', Times, serif
+}
+
+h1,
+h2 {
+  font-size: 100%;
+}
+
+button {
+  font-size: 100%;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+
+ul {
+  list-style: none
+  ;
+}
+/* for delete button in search bar*/
+/*modal*/
+*, ::after, ::before {
+    box-sizing: inherit;
+}
+
+.delete { 
+  top: 200%;
+  left :85%;
+   
+}
+.delete::after, .delete::before, .modal-close::after, .modal-close::before {
+    background-color: #000000;
+    content: "X";
+    display: block;
+    left: 50%;
+    position: absolute;
+    top: -19px;
+    bottom: 0;
+    transform: translateX(-40%) translateY(-50%) rotate(45deg);
+    transform-origin: center center;
+}
+
+.modal-close::after, .modal-close::before {
+    background-color: #000000;
+    content: "X";
+    display: block;
+    left: 50%;
+    position: absolute;
+    top: -19px;
+    bottom: 0;
+    transform: translateX(-40%) translateY(-50%) rotate(45deg);
+    transform-origin: center center;
+}
