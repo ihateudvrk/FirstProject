@@ -248,7 +248,7 @@ if ($burgers.length > 0) {
       var target = $el.dataset.target;
       var $target = document.getElementById(target);
       $el.classList.toggle('is-active');
-      $target.classList.toggle('navbar-burger ');
+      $target.classList.toggle('burger');
     });
   });
 }
