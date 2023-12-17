@@ -108,7 +108,7 @@ Music Junky is a application to search a favorite artist and compare data on whi
         <li><a href="#installation">Installation</a></li>
       </ul>
     </li>
-    <li><a href="#usage">Usage</a></li>
+    <li><a href="#mock-up">Mock-up</a></li>
     <li><a href="#roadmap">Roadmap</a></li>
     <li><a href="#contributing">Contributing</a></li>
     <li><a href="#license">License</a></li>
@@ -158,7 +158,7 @@ Install our app
    <!-- Enter our API once its finished >
 4. Enter your API in `config.js`
    ```js
-   const API_KEY = 'ENTER YOUR API';
+   const API_KEY = '324424';
    ```
 
 <!-- The Links to our Project 1 -->
@@ -170,8 +170,8 @@ Install our app
 
 <!--Our mockup of our assignments -->
 ## Mock-up
- mockup of our assignment here 
 
+![Mockup](mockup.gif)
 
 
 <!-- ROADMAP to view our issues on making this project -->
@@ -226,8 +226,9 @@ Team Bananabandana
 The list of our resource list used to create Music Junky 
 * [Project Shields](https://shields.io/)
 
+* [Youtube](https://www.youtube.com/)
 
-
+* [W3Schools](https://www.w3schools.com/)
 
 
 <!-- MARKDOWN LINKS & IMAGES -->
