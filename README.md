@@ -164,26 +164,13 @@ Install our app
 <!-- The Links to our Project 1 -->
 
 ## Links
- [The URL of the deployed application](Insert link to deployed application HERE )
+ [The URL of the deployed application](https://ihateudvrk.github.io/FirstProject/)
 
  [The URL of the Github repository](https://github.com/ihateudvrk/FirstProject)
 
 <!--Our mockup of our assignments -->
 ## Mock-up
  mockup of our assignment here 
-
-
-<!-- USAGE EXAMPLES -->
-
-<!-- Not sure if we can include this as part of our READ.ME when we're done with the website -->
-
-## Usage
-
-
-Use this space to show useful examples of how a project can be used. Additional screenshots, code examples and demos work well in this space. You may also link to more resources.
-
-_For more examples, please refer to the [Documentation](https://example.com)_
-
 
 
 
@@ -218,7 +205,7 @@ MIT License
 
 
 <!-- CONTACT information  -->
-## Contact us 
+## Contact 
 
 Team Bananabandana
 <!-- I suggest we put our emails for contacts-->
@@ -226,8 +213,8 @@ Team Bananabandana
 
 * Kathy Lopez- kathyylopezz97@gmail.com
 * Darius Beach- dariusbeach4@gmail.com
-* Joseph Colon-type  your email here
-* Gabe Barraza- type your email here 
+* Joseph Colon-https://github.com/JosephTColon
+* Gabe Barraza- https://github.com/ihateudvrk/FirstProject
 
 
 
