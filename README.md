@@ -168,6 +168,8 @@ Install our app
 
  [The URL of the Github repository](https://github.com/ihateudvrk/FirstProject)
 
+ [Project Presentation link](https://docs.google.com/presentation/d/1QmEFM0sYa2ggLFJB--vf2DLSks_p1NXCtEsMmusvbpk/edit?usp=sharing)
+
 <!--Our mockup of our assignments -->
 ## Mock-up
 
