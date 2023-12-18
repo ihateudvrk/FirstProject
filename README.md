@@ -108,7 +108,7 @@ Music Junky is a application to search a favorite artist and compare data on whi
         <li><a href="#installation">Installation</a></li>
       </ul>
     </li>
-    <li><a href="#usage">Usage</a></li>
+    <li><a href="#mock-up">Mock-up</a></li>
     <li><a href="#roadmap">Roadmap</a></li>
     <li><a href="#contributing">Contributing</a></li>
     <li><a href="#license">License</a></li>
@@ -158,33 +158,20 @@ Install our app
    <!-- Enter our API once its finished >
 4. Enter your API in `config.js`
    ```js
-   const API_KEY = 'ENTER YOUR API';
+   const API_KEY = '324424';
    ```
 
 <!-- The Links to our Project 1 -->
 
 ## Links
- [The URL of the deployed application](Insert link to deployed application HERE )
+ [The URL of the deployed application](https://ihateudvrk.github.io/FirstProject/)
 
  [The URL of the Github repository](https://github.com/ihateudvrk/FirstProject)
 
 <!--Our mockup of our assignments -->
 ## Mock-up
- mockup of our assignment here 
 
-
-<!-- USAGE EXAMPLES -->
-
-<!-- Not sure if we can include this as part of our READ.ME when we're done with the website -->
-
-## Usage
-
-
-Use this space to show useful examples of how a project can be used. Additional screenshots, code examples and demos work well in this space. You may also link to more resources.
-
-_For more examples, please refer to the [Documentation](https://example.com)_
-
-
+![Mockup](mockup.gif)
 
 
 <!-- ROADMAP to view our issues on making this project -->
@@ -218,7 +205,7 @@ MIT License
 
 
 <!-- CONTACT information  -->
-## Contact us 
+## Contact 
 
 Team Bananabandana
 <!-- I suggest we put our emails for contacts-->
@@ -226,8 +213,8 @@ Team Bananabandana
 
 * Kathy Lopez- kathyylopezz97@gmail.com
 * Darius Beach- dariusbeach4@gmail.com
-* Joseph Colon-type  your email here
-* Gabe Barraza- type your email here 
+* Joseph Colon-https://github.com/JosephTColon
+* Gabe Barraza- https://github.com/ihateudvrk/FirstProject
 
 
 
@@ -239,8 +226,9 @@ Team Bananabandana
 The list of our resource list used to create Music Junky 
 * [Project Shields](https://shields.io/)
 
+* [Youtube](https://www.youtube.com/)
 
-
+* [W3Schools](https://www.w3schools.com/)
 
 
 <!-- MARKDOWN LINKS & IMAGES -->
